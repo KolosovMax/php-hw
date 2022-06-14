@@ -22,5 +22,7 @@ $instruments = require_once 'data.php';
     </div>
 
     <?php endforeach; ?>
+
+<script src="instrument.js"></script>
 </body>
 </html>
