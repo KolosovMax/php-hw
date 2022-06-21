@@ -5,9 +5,24 @@
     <title>Загрузка нескольких файлов</title>
 </head>
 <body>
-    <p id="message"></p>
+    <div id="name-error">
+        <p id="name-message"></p>
+        <p id="name-full"></p>
+    </div>
+    <div id="size-error">
+        <p id="size-message"></p>
+        <p id="size-full"></p>
+    </div>
+    <div id="type-error">
+        <p id="type-message"></p>
+        <p id="type-full"></p>
+    </div>
+    <div>
+        <p id="message"></p>
+        <p id="response"></p>
+    </div>
   <form name="files-loading">
-    <input type="file"  name="foto" accept="image/*" multiple="true">
+    <input type="file"  name="foto[]" accept="image/*" multiple>
     <input type="submit" value="Загрузить">
   </form>
 </body>
